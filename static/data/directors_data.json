@@ -1,0 +1,100 @@
+{
+  "directors": [
+    {
+      "lastName": "Raimi",
+      "firstName": "Sam",
+      "birthDate": "10/23/1959",
+      "deathDate": "Alive",
+      "movies": [
+        {
+          "title": "Spider-Man"
+        },
+        {
+          "title": "Spider-Man 2"
+        },
+        {
+          "title": "Spider-Man 3"
+        },
+        {
+          "title": "Oz the Great and Powerful"
+        },
+        {
+          "title": "Don't Breathe"
+        }
+      ]
+    },
+    {
+      "lastName": "Spielberg",
+      "firstName": "Steven",
+      "birthDate": "12/18/1946",
+      "deathDate": "Alive",
+      "movies": [
+        {
+          "title": "Jaws"
+        },
+        {
+          "title": "Jurassic Park"
+        },
+        {
+          "title": "Ready Player One"
+        },
+        {
+          "title": "Saving Private Ryan"
+        },
+        {
+          "title": "Back to the Future"
+        },
+        {
+          "title": "The Color Purple"
+        }
+      ]
+    },
+    {
+      "lastName": "Bay",
+      "firstName": "Michael",
+      "birthDate": "2/17/1965",
+      "deathDate": "Alive",
+      "movies": [
+        {
+          "title": "Transformers"
+        },
+        {
+          "title": "Pearl Harbor"
+        }
+      ]
+    },
+    {
+      "lastName": "Nolan",
+      "firstName": "Christopher",
+      "birthDate": "7/30/1970",
+      "movies": [
+        {
+          "title": "Tenet"
+        },
+        {
+          "title": "The Dark Knight"
+        },
+        {
+          "title": "Inception"
+        }
+      ]
+    },
+    {
+      "lastName": "Allen",
+      "firstName": "Woody",
+      "birthDate": "11/30/1935",
+      "deathDate": "Alive",
+      "movies": [
+        {
+          "title": "Midnight in Paris"
+        },
+        {
+          "title": "Annie Hall"
+        },
+        {
+          "title": "Manhattan"
+        }
+      ]
+    }
+  ]
+}

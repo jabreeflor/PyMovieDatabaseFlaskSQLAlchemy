@@ -1,0 +1,24 @@
+{% extends "notsimple_layout.html" %}
+
+{% block title %} {{title}}  {% endblock title %}
+{% block header %} {{header}}  {% endblock header %}
+
+{% block content %} 
+<form action="" method="post">
+   {{ form.csrf_token }}
+
+   <div>
+      {{form.movie_id.label}}
+      <span class="error">{{ form.movie_id.errors | join("|") }}</span>
+   </div>
+
+   <div>
+      {{form.movie_id}}
+   </div>
+ 
+   <!-- SUBMIT -->
+   <div>
+      {{form.submit()}}
+   </div>
+</form>
+{% endblock content %}

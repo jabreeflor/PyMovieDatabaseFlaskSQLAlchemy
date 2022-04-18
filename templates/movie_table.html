@@ -1,0 +1,70 @@
+{% extends "notsimple_layout.html" %}
+
+{% block title %} {{title}} {% endblock title %}
+{% block header %} {{header}} {% endblock header %}
+
+{% block content %}
+<h2>Straight forward but tedious</h2>
+<h2>Have to know and explicitly use the column/field names</h2>
+<table>
+   <tr>
+      <th>
+         id
+      </th>
+      <th>
+         title
+      </th>
+      <th>
+         content
+      </th>
+      <th>
+         director_id
+      </th>
+   </tr>
+   {% for item in movies %}
+      <tr>
+         <td>
+            {{ item.id }}
+         </td>
+         <td>
+            {{ item.title }}
+         </td>
+         <td>
+            {{ item.content }}
+         </td>
+         <td>
+            {{ item.director_id }}
+         </td>
+      </tr>
+   {% endfor %}
+</table>
+
+
+<h2>NUMBER TWO: results converted to list of dictionaries</h2>
+<h3>This approach "discovers" the column/field names</h3>
+<h3>Need to ignore the _sa_instance_state key-value pair</h3>
+<h3>Changed order of fields from table definition</h3>
+<table>
+   <tr>
+      {% for key, value in movies[0].items() %}
+         {% if key != '_sa_instance_state' %}
+            <th>
+                  {{key}}
+            </th>
+         {% endif %}
+      {% endfor %}
+   </tr>
+   {% for element in movies %}
+      <tr>
+         {% for key, value in element.items() %}
+            {% if key != '_sa_instance_state' %}
+               <td>
+                  {{ value }}
+               </td>
+            {% endif %}
+         {% endfor %}
+      </tr>
+   {% endfor %}
+</table>
+
+{% endblock content %}

@@ -1,0 +1,45 @@
+{% extends "notsimple_layout.html" %}
+
+{% block title %} {{title}}  {% endblock title %}
+{% block header %} {{header}}  {% endblock header %}
+
+{% block content %} 
+<form action="" method="post">
+   {{ form.csrf_token }}
+
+   <div>
+      {{form.title.label}}
+      <span class="error">{{ form.title.errors | join("|") }}</span>
+   </div>
+   <div>
+      {{form.title}}
+   </div>
+ 
+   <div>
+      {{form.content.label}}
+      <span class="error">{{ form.content.errors | join("|") }}</span>
+   </div>
+   <div>
+      {{form.content}}
+   </div>
+
+   <div>
+      {{form.director_id.label}}     
+   </div>
+   <div>
+      {{form.director_id}}
+   </div>
+
+   
+   <!-- SUBMIT -->
+   <div>
+      {{form.submit()}}
+   </div>
+</form>
+POOP
+{% for field, errors in form.errors.items() %}
+<div class="alert alert-error">
+    {{ form[field].label }}: {{ ', '.join(errors) }}
+</div>
+{% endfor %}
+{% endblock content %}

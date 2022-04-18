@@ -1,0 +1,22 @@
+{% extends "notsimple_layout.html" %}
+
+{% block title %} {{title}}  {% endblock title %}
+{% block header %} {{header}}  {% endblock header %}
+
+{% block content %} 
+   <p>
+      Last Name: {{ result["lastName"] }} 
+   </p>
+   <p>
+      First Name: {{ result["firstName"] }} 
+   </p>
+   <p>
+      Country: {{ result["country"] }} 
+   </p>
+   <p>
+      Birth date: {{ result["birthDate"] }} 
+   </p>
+   <p>
+      Death date: {{ result["deathDate"] }} 
+   </p>
+{% endblock content %}

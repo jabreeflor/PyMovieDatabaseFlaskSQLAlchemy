@@ -1,0 +1,42 @@
+body{
+   background-color: bisque;
+   color:indigo;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   padding:2rem;
+}
+.header { /* style of anything with class of header -- that's what .header means */
+   padding: 20px;
+   text-align: center;
+   background:indigo;
+   color: bisque;
+   font-size: 3rem;
+ }
+ .header p { /* style of a paragraph contained in an element with header class */
+    font-size: 1.5rem;
+ }
+ .nav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ .nav li {
+   display: inline-block;
+   width: 6rem;
+ }
+ .nav li a {
+  display: block;
+  background-color: indigo;
+  color:bisque;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-color:darkolivegreen;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.nav li a:hover {
+  background-color: bisque;
+  color:indigo;
+}
